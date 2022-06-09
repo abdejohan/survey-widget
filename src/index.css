@@ -1,12 +1,80 @@
-.container {
-	background-color: lightsalmon;
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+@font-face {
+	font-family: "Beba";
+	src: url("./assets/fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+	font-family: "Poppins";
+	src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+	font-family: "Jakarta";
+	src: url("./assets/fonts/PlusJakartaSans-Italic.ttf");
+}
+
+.survery_widget_container {
+	padding: 25px;
+	background-color: #1a1a1a;
 	max-width: 500px;
 	min-height: 500px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-flow: column nowrap;
+	align-items: flex-start;
 }
 
-h1 {
-	color: white;
+.survery_widget_title {
+	font-family: "Beba";
+	font-weight: 100;
+	font-size: 50px;
+	line-height: 45px;
+	color: #ffffff;
+}
+.survery_widget_description {
+	font-family: "Poppins";
+	font-weight: 100;
+	font-size: 14px;
+	line-height: 21px;
+	color: #a0a0a0;
+}
+.survery_widget_progress_bar {
+	width: 100%;
+	margin: 25px 0px;
+}
+
+.survery_widget_question {
+	font-family: "Beba";
+	font-weight: 100;
+	font-size: 30px;
+	margin-bottom: 20px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.widget_choice_container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+	margin-bottom: 6px;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	min-height: 50px;
+	min-width: 100%;
+}
+
+.widget_choice {
+	font-family: "Jakarta";
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 18px;
+	color: #ffffff;
+}
+.widget_choice_selected {
+	background-color: #f7d725;
+	color: #ffffff;
 }
