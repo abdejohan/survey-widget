@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "webpack serve --port 3000",
-		"build": "NODE_ENV=production webpack"
+		"build:widget": "parcel build src/index.tsx --no-source-maps -d widget"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.12",
@@ -13,6 +13,7 @@
 		"css-loader": "^6.7.1",
 		"html-webpack-plugin": "^5.5.0",
 		"mini-css-extract-plugin": "^2.6.0",
+		"parcel-bundler": "^1.12.5",
 		"ts-loader": "^9.3.0",
 		"typescript": "^4.7.3",
 		"webpack": "^5.73.0",

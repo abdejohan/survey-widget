@@ -3,6 +3,8 @@
 /node_modules
 /recycle
 /build
+/widget
+/.cache
 
 # FILES
 .env

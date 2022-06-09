@@ -1,12 +1,11 @@
 import React from "react";
 
-const App = () => {
+const App = ({ widget }: any) => {
+	console.log(widget);
 	return (
-		<React.StrictMode>
-			<div className='container'>
-				<h1>hej</h1>
-			</div>
-		</React.StrictMode>
+		<div className='container'>
+			<h1>hej</h1>
+		</div>
 	);
 };
 
