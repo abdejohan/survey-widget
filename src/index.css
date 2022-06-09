@@ -1,0 +1,12 @@
+.container {
+	background-color: lightsalmon;
+	max-width: 500px;
+	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: white;
+}
