@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Choice from "./components/Choice";
+// @ts-ignore
+import ViewSlider from "react-view-slider";
 
 const App = ({ widget }: any) => {
-	console.log(widget);
+	const [currentView, setCurrentView] = useState<number>(0);
+	const subreddit = widget.getAttribute("data-questions");
+	console.log(JSON.parse(subreddit));
+	// This function renders the view at the given index.
+	// @ts-ignore
+	const renderView = ({ index, active, transitionState }) => (
+		<>
+			<h2 className='survery_widget_question'>Vad är ditt mål?</h2>
+			<div className='survery_widget_choices_container'>
+				<Choice text='Bygga mer muskler' />
+				<Choice text='Bygga mer muskler' />
+				<Choice text='Bygga mer muskler' />
+			</div>
+		</>
+	);
+
 	return (
 		<div className='survery_widget_container'>
 			<h1 className='survery_widget_title'>4 frågor från En gratis konsultation</h1>
@@ -19,11 +36,17 @@ const App = ({ widget }: any) => {
 				className='survery_widget_progress_bar'
 				completed={60}
 			/>
-			<h2 className='survery_widget_question'>Vad är ditt mål?</h2>
-			<Choice text='gg1' />
-			<Choice text='gg2' />
-			<Choice text='gg3' />
-			<Choice text='gg4' />
+			<ViewSlider
+				renderView={renderView}
+				numViews={3}
+				activeView={currentView}
+				animateHeight
+			/>
+			<button
+				className='widget_submit_button'
+				onClick={() => setCurrentView(currentView + 1)}>
+				CLICK
+			</button>
 		</div>
 	);
 };

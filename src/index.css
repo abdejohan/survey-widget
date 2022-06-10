@@ -19,7 +19,7 @@
 
 .survery_widget_container {
 	padding: 25px;
-	background-color: #1a1a1a;
+	background-color: yellow; /* #1a1a1a */
 	max-width: 500px;
 	min-height: 500px;
 	display: flex;
@@ -55,16 +55,22 @@
 	color: #ffffff;
 }
 
+.survery_widget_choices_container {
+	display: flex;
+	flex-flow: row wrap;
+	row-gap: 6px;
+	column-gap: 6px;
+}
+
 .widget_choice_container {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	padding-left: 20px;
-	margin-bottom: 6px;
 	border: 2px solid #ffffff;
 	border-radius: 5px;
 	min-height: 50px;
-	min-width: 100%;
+	width: 100%;
 }
 
 .widget_choice {
@@ -77,4 +83,17 @@
 .widget_choice_selected {
 	background-color: #f7d725;
 	color: #ffffff;
+}
+
+.widget_submit_button {
+	margin-top: 30px;
+	border: none;
+	padding: 10px;
+	background-color: #f7d725;
+	color: #ffffff;
+}
+
+.ff {
+	width: 500px;
+	height: 500px;
 }

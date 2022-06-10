@@ -889,7 +889,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.4.4", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.1.5", "@babel/runtime@^7.4.4", "@babel/runtime@^7.8.4":
   version "7.18.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
   integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
@@ -1794,6 +1794,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
+bowser@^1.7.3:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.9.4.tgz#890c58a2813a9d3243704334fa81b96a5c150c9a"
+  integrity sha512-9IdMmj2KjigRq6oWhmwv1W36pDuA4STQZ8q6YO9um+x07xgYNCD3Oou+WP/3L1HNz7iqythGet3/p4wvc8AAwQ==
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -2450,6 +2455,14 @@ css-declaration-sorter@^4.0.1:
   dependencies:
     postcss "^7.0.1"
     timsort "^0.3.0"
+
+css-in-js-utils@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/css-in-js-utils/-/css-in-js-utils-2.0.1.tgz#3b472b398787291b47cfe3e44fecfdd9e914ba99"
+  integrity sha512-PJF0SpJT+WdbVVt0AOYp9C8GnuruRlL/UFW7932nLWmFLQTaWEzTBQEx7/hn4BuV+WON75iAViSUJLiU3PKbpA==
+  dependencies:
+    hyphenate-style-name "^1.0.2"
+    isobject "^3.0.1"
 
 css-loader@^6.7.1:
   version "6.7.1"
@@ -3808,6 +3821,11 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
+hyphenate-style-name@^1.0.2:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
+  integrity sha512-ygGZLjmXfPHj+ZWh6LwbC37l43MhfztxetbFCoYTM2VjkIUpeHgSNn7QIyVFj7YQ1Wl9Cbw5sholVJPzWvC2MQ==
+
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -3873,6 +3891,14 @@ inherits@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
   integrity sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==
+
+inline-style-prefixer@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-4.0.2.tgz#d390957d26f281255fe101da863158ac6eb60911"
+  integrity sha512-N8nVhwfYga9MiV9jWlwfdj1UDIaZlBFu4cJSJkIr7tZX7sHpHhGR5su1qdpW+7KPL8ISTvCIkcaFi/JdBknvPg==
+  dependencies:
+    bowser "^1.7.3"
+    css-in-js-utils "^2.0.0"
 
 internal-slot@^1.0.3:
   version "1.0.3"
@@ -5642,7 +5668,7 @@ process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
-prop-types@^15.8.1:
+prop-types@^15.0.0, prop-types@^15.6.0, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -5767,6 +5793,13 @@ raw-body@2.5.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-awesome-slider@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/react-awesome-slider/-/react-awesome-slider-4.1.0.tgz#6a800300cb3edd556d2388090f65ac731467639a"
+  integrity sha512-cbPI1MTpVLKbEH6gf9bwtJb8Ja6R/YJonKbUQehfq2B2AAJkgDMeHntaa4SgGCRqWd55xKiT+CkjfKau1QRsKw==
+  dependencies:
+    web-animation-club "^0.6.0"
+
 react-dom@^18.1.0:
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.1.0.tgz#7f6dd84b706408adde05e1df575b3a024d7e8a2f"
@@ -5779,6 +5812,24 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-transition-context@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-transition-context/-/react-transition-context-5.0.0.tgz#e89de0c2c69107182676f20ea06438fe8e151f95"
+  integrity sha512-8g6HnPtxPPMti+X4jG4X0DQ3f3CCkmVLQrYSmgc271+uABSASnndKHV7y1xhD2Z9xmdjV/6i9UPCFzSSkbsFDA==
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+    prop-types "^15.0.0"
+
+react-view-slider@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/react-view-slider/-/react-view-slider-4.5.0.tgz#97223b925509ce454eda3f3cf15b286304775f69"
+  integrity sha512-JI5duL44M374FqXkF8T/myK7VzM+ECbQ/v/ahNSMMpEilKWommEhhHOCR6jQijoOvUIepKxUIQ7Eo3Tm6QDOaw==
+  dependencies:
+    "@babel/runtime" "^7.1.5"
+    inline-style-prefixer "^4.0.0"
+    prop-types "^15.6.0"
+    react-transition-context "^5.0.0"
 
 react@^18.1.0:
   version "18.1.0"
@@ -7080,6 +7131,11 @@ wcwidth@^1.0.1:
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
   dependencies:
     defaults "^1.0.3"
+
+web-animation-club@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/web-animation-club/-/web-animation-club-0.6.0.tgz#c1dd79646b21e4265b5f95ae9cb8b93b73e05e47"
+  integrity sha512-9W+EQu1HiaPLe/7WZlhJ2ULqQ4VL80RPDYW+ZcjfTKp6ayOuT1k3SVO6+tu0VBRmOqueJ/mrG+rjjInIv8Aglg==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
