@@ -7,7 +7,7 @@ import { DataAttributeObject, Question } from "./types";
 import TextInput from "./components/TextInput";
 
 const App = ({ widget }: any) => {
-	const [currentView, setCurrentView] = useState<number>(4);
+	const [currentView, setCurrentView] = useState<number>(0);
 	const [progressBarValue, setProgressBarValue] = useState<number>(0);
 	const dataAttribute = widget.getAttribute("data-questions");
 	const dataInJSON: DataAttributeObject = JSON.parse(dataAttribute);
@@ -61,14 +61,16 @@ const App = ({ widget }: any) => {
 		<div className='survery_widget_container'>
 			<h1 className='survery_widget_title'>{questions[currentView].title}</h1>
 			<h2 className='survery_widget_description'>{questions[currentView].description}</h2>
-			<ProgressBar
-				isLabelVisible={false}
-				borderRadius='0px'
-				bgColor='#F7D725'
-				height='8px'
-				className='survery_widget_progress_bar'
-				completed={progressBarValue}
-			/>
+			{currentView < questions.length - 1 && (
+				<ProgressBar
+					isLabelVisible={false}
+					borderRadius='0px'
+					bgColor='#F7D725'
+					height='8px'
+					className='survery_widget_progress_bar'
+					completed={progressBarValue}
+				/>
+			)}
 			<ViewSlider
 				renderView={renderView}
 				numViews={questions.length}
@@ -78,6 +80,9 @@ const App = ({ widget }: any) => {
 			{questions[currentView]?.nextButton && (
 				<button
 					className='widget_submit_button'
+					style={{
+						width: questions[currentView]?.buttonWidth === "full" ? "100%" : "30%",
+					}}
 					onClick={() => setCurrentView(currentView + 1)}>
 					{questions[currentView]?.nextButton}
 				</button>
