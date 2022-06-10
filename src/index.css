@@ -14,7 +14,7 @@
 }
 @font-face {
 	font-family: "Jakarta";
-	src: url("./assets/fonts/PlusJakartaSans-Italic.ttf");
+	src: url("./assets/fonts/PlusJakartaSans-Semibold.ttf");
 }
 
 .survery_widget_container {
@@ -93,7 +93,23 @@
 	color: #ffffff;
 }
 
-.ff {
-	width: 500px;
-	height: 500px;
+.widget_input {
+	display: flex;
+	font-family: "Jakarta";
+	font-size: 14;
+	line-height: 18;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+	background-color: #1a1a1a;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	height: 50px;
+	width: 100%;
+}
+.widget_input::placeholder {
+	font-family: "Jakarta";
+	font-style: normal;
+	color: #ffffff;
 }

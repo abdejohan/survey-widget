@@ -7,7 +7,7 @@ import { DataAttributeObject, Question } from "./types";
 import TextInput from "./components/TextInput";
 
 const App = ({ widget }: any) => {
-	const [currentView, setCurrentView] = useState<number>(0);
+	const [currentView, setCurrentView] = useState<number>(4);
 	const [progressBarValue, setProgressBarValue] = useState<number>(0);
 	const dataAttribute = widget.getAttribute("data-questions");
 	const dataInJSON: DataAttributeObject = JSON.parse(dataAttribute);
