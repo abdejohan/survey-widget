@@ -15,7 +15,7 @@ const TextInput: React.FC<TextInputProps> = (props) => {
 		<input
 			className='widget_input'
 			placeholder={placeholder}
-			onChange={(event) => handleInput(event.target.value)}></input>
+			onBlur={(event) => handleInput(event.target.value)}></input>
 	);
 };
 

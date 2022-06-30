@@ -7,6 +7,7 @@ type Question = {
 	inputs: Array<string> | undefined;
 	backButton: string | undefined;
 	nextButton: string | undefined;
+	doneButton: string | undefined;
 	buttonWidth: string | undefined;
 };
 
