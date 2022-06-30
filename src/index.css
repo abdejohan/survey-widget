@@ -1,28 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans&family=Poppins&display=swap");
+
 * {
 	box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
 }
 
-@font-face {
-	font-family: "Beba";
-	src: url("./assets/fonts/BebasNeue-Regular.ttf");
-}
-@font-face {
-	font-family: "Poppins";
-	src: url("./assets/fonts/Poppins-Regular.ttf");
-}
-@font-face {
-	font-family: "Jakarta";
-	src: url("./assets/fonts/PlusJakartaSans-Semibold.ttf");
-}
-
 .survery_widget_container {
 	padding: 25px;
 	padding-top: 35px;
 	background-color: #1a1a1a;
-	max-width: 500px;
-	min-height: 500px;
 	display: flex;
 	justify-content: flex-start;
 	flex-flow: column nowrap;
@@ -30,7 +17,7 @@
 }
 
 .survery_widget_title {
-	font-family: "Beba";
+	font-family: "Bebas Neue";
 	font-weight: 100;
 	font-size: 50px;
 	line-height: 45px;
@@ -51,7 +38,7 @@
 }
 
 .survery_widget_question {
-	font-family: "Beba";
+	font-family: "Bebas Neue";
 	font-weight: 100;
 	font-size: 30px;
 	margin-bottom: 20px;
@@ -78,7 +65,7 @@
 }
 
 .widget_choice {
-	font-family: "Jakarta";
+	font-family: "Plus Jakarta Sans";
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 18px;
@@ -98,7 +85,7 @@
 }
 
 .widget_back_button {
-	font-family: "Jakarta";
+	font-family: "Plus Jakarta Sans";
 	text-decoration: underline;
 	font-size: 14px;
 	line-height: 18px;
@@ -112,7 +99,7 @@
 .widget_input {
 	outline: none;
 	display: flex;
-	font-family: "Jakarta";
+	font-family: "Plus Jakarta Sans";
 	font-size: 14;
 	line-height: 18;
 	justify-content: flex-start;
@@ -127,13 +114,13 @@
 	width: 100%;
 }
 .widget_input::placeholder {
-	font-family: "Jakarta";
+	font-family: "Plus Jakarta Sans";
 	font-style: normal;
 	color: #ffffff;
 }
 
 .widget_submit_button {
-	font-family: "Jakarta";
+	font-family: "Plus Jakarta Sans";
 	border-radius: 5px;
 	height: 50px;
 	font-size: 14px;
